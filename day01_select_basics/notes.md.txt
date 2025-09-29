@@ -1,0 +1,21 @@
+Show all data from the table
+Show only names and salaries
+Rename a column in your result
+Sort employees by salary (high → low)
+Show only top 3 highest salaries
+Filter employees from IT department
+Filter employees hired after 2020
+Combine conditions : Show Sales employees earning > 55000.
+HR & IT employees sorted by hire_date ascending
+Show name, salary, and yearly bonus = 10% of salary
+
+| Concept             | Syntax                          | Example                           |
+| ------------------- | ------------------------------- | --------------------------------- |
+| Select all          | `SELECT * FROM table;`          | `SELECT * FROM employees;`        |
+| Choose columns      | `SELECT col1, col2 FROM table;` |                                   |
+| Aliases             | `SELECT col AS alias;`          | `salary AS monthly_pay`           |
+| Sorting             | `ORDER BY col ASC/DESC`         | `ORDER BY salary DESC`            |
+| Limit results       | `LIMIT n`                       | `LIMIT 3`                         |
+| Filtering           | `WHERE condition`               | `WHERE department='IT'`           |
+| Multiple conditions | `AND`, `OR`                     | `WHERE dep='IT' AND salary>50000` |
+| Math ops            | `+, -, *, /`                    | `salary * 0.10`                   |
