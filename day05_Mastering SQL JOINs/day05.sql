@@ -34,6 +34,30 @@ Select e.name,d.dept_name from employees e
 right join department d
 on e.department_id=d.dept_id
 
-Select e.name, d.dept_name from employees e
-Full Join department d
+select e.name,d.dept_name from employees e
+full join department d
 on e.department_id=d.dept_id
+
+select e.name, d.dept_name from employees e 
+left join department d
+on e.department_id=d.dept_id
+where d.dept_id IS NULL
+
+Select d.dept_name from department d
+left join employees e
+on d.dept_id=e.department_id
+where e.emp_id IS NULL
+
+select e.name, d.dept_name, e.salary
+from employees e
+left join department d
+on e.department_id=d.dept_id
+where e.salary > 60000
+
+Select d.dept_name, count(e.emp_id) as total_employees 
+from department d
+left join employees e
+on d.dept_id=e.department_id
+group by d.dept_name
+
+-- This needs to be revised
